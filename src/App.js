@@ -3,10 +3,20 @@ import football from './svg/football.svg'
 import basketball from './svg/basketball.svg'
 import basketball2 from './svg/basketball2.svg'
 import styled from 'styled-components'
-import { useState } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
-  const [active, setActive] = useState(1);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <>
       <Layout>
@@ -76,13 +86,13 @@ function App() {
           </div>
         </div>
         <div className=''>
-          <ImgBasketball>
-            <img
+          <div className='overflow-hidden w-full h-[843px] absolute'>
+            <ImgBasketball
               className=''
               src={basketball}
               alt='basketball'
             />
-          </ImgBasketball>
+          </div>
           <div className="bg-[#FFF]">
             <div className="flex sm:pl-7 min-[1025px]:pl-24">
               <div className="basis-[62%]">
@@ -113,7 +123,7 @@ function App() {
                     <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
                   </div>
                   <div className='text-[#C2C2C2] font-normal text-3xl'>
-                    CONNECTION
+                    COLLABORATION
                   </div>
                 </div>
                 <div className='pt-8 text-lg font-normal md:w-[85%]'>
@@ -139,13 +149,12 @@ function App() {
                   Save your time, recruit proper athlets for your team.
                 </div>
               </div>
-              <div className="basis-[38%]"></div>
             </div>
           </div>
         </div>
       </Layout>
       <Carousel>
-        <div>
+      <div>
           <div>
             <div className='pt-2 pl-8 overflow-hidden font-normal text-[50px] text-[#E7E7E7]'>ATHLETS</div>
             <div className='h-[220px] flex justify-center'>
@@ -156,58 +165,58 @@ function App() {
               />
             </div>
           </div>
-          <section class="carousel">
-            <ol class="carousel__viewport">
-              <li id="carousel__slide1" class="carousel__slide">
-                <div class="carousel__snapper">
-                  awdawdwad
+          <div className=' w-full overflow-hidden h-[300px]'>
+            <Slider {...settings}>
+              <div className="bg-[#F5F4F9]">
+                <div className="py-16 px-4 h-[280px]">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>02</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      COLLABORATION
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                  </div>
                 </div>
-              </li>
-              <li id="carousel__slide2" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-              </li>
-              <li id="carousel__slide3"
-
-                class="carousel__slide">
-                <div class="carousel__snapper"></div>
-              </li>
-              <li id="carousel__slide4"
-
-                class="carousel__slide">
-                <div class="carousel__snapper"></div>
-              </li>
-            </ol>
-            <aside class="carousel__navigation">
-              <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                  <a 
-                    onClick={(e)=>{console.log(e)}}
-                    style={{backgroundColor: active === '1' ? '#5C3CAF': '#D8D8D8'}} 
-                    href="#carousel__slide1"
-                    class="carousel__navigation-button">
-                      Go to slide 1
-                  </a>
-                </li>
-                <li class="carousel__navigation-item">
-                <a 
-                    onClick={(e)=>{console.log(e)}}
-                    style={{backgroundColor: active === '2' ? '#5C3CAF': '#D8D8D8'}} 
-                    href="#carousel__slide2"
-                    class="carousel__navigation-button">
-                      Go to slide 2
-                  </a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a style={{backgroundColor: active === '1' ? '#5C3CAF': '#D8D8D8'}} href="#carousel__slide3"
-                    class="carousel__navigation-button">Go to slide 3</a>
-                </li>
-                <li class="carousel__navigation-item">
-                  <a style={{backgroundColor: active === '1' ? '#5C3CAF': '#D8D8D8'}} href="#carousel__slide4"
-                    class="carousel__navigation-button">Go to slide 4</a>
-                </li>
-              </ol>
-            </aside>
-          </section>
+              </div>
+              <div className="bg-[#F5F4F9] h-[280px]">
+                <div className="py-16 px-4">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>02</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      COLLABORATION
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#F5F4F9] h-[280px]">
+                <div className="py-16 px-4">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>02</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      COLLABORATION
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc 
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
         </div>
       </Carousel>
     </>
@@ -252,43 +261,31 @@ const ImgFootball = styled.img`
   top:35px;
   left:75px;
 `
-const ImgBasketball = styled.div`
+const ImgBasketball = styled.img`
   @media (max-width: 1024px) {
-    img {
-      right: -170px !important;
-      bottom: 50px !important;
-    }
+    right: -170px !important;
+    bottom: 50px !important;
   }
 
   @media (max-width: 768px) {
-    img {
-      right: -270px !important;
-      bottom: 130px !important;
-    }
+    right: -270px !important;
+    bottom: 130px !important;
   }
 
   @media (max-width: 640px) {
-    img {
-      right: 50px !important;
-      bottom: 50px !important;
-      width: 778px;
-      height: 850px;
-    }
-  }
-
-  img {
-    position: absolute;
-    margin-left: -200px;
+    right: 50px !important;
+    bottom: 50px !important;
     width: 778px;
     height: 850px;
-    right: 50px;
-    bottom: 50px;
   }
 
-  width:100%;
-  height:843px;
-  overflow: hidden;
   position: absolute;
+  margin-left: -200px;
+  width: 778px;
+  height: 850px;
+  right: 18px;
+  bottom: 50px;
+  z-index: 100000;
 `
 const Carousel = styled.div`
   @media screen and (min-width:641px) {
