@@ -1,6 +1,7 @@
 
 import football from './svg/football.svg'
 import basketball from './svg/basketball.svg'
+import football2 from './svg/football2.svg'
 import basketball2 from './svg/basketball2.svg'
 import styled from 'styled-components'
 import Slider from "react-slick";
@@ -78,7 +79,7 @@ function App() {
                     GROWTH
                   </div>
                 </div>
-                <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                <div className='pt-8 text-lg text-[#FFFFFF] font-normal md:w-[85%]'>
                   Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc
                 </div>
               </div>
@@ -154,9 +155,73 @@ function App() {
         </div>
       </Layout>
       <Carousel>
-      <div>
+        <div>
           <div>
             <div className='pt-2 pl-8 overflow-hidden font-normal text-[50px] text-[#E7E7E7]'>ATHLETS</div>
+            <div className='h-[220px] flex justify-center'>
+              <img
+                className='absolute z-[100000]'
+                src={football2}
+                alt='football2'
+              />
+            </div>
+          </div>
+          <div className=' w-full overflow-hidden h-[340px]'>
+            <Slider {...settings}>
+              <div className="bg-[#F5F4F9]">
+                <div className="py-16 px-4 h-[340px]">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>01</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      CONNECTION
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Connect with coaches directly, you can ping coaches to view profile.
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#F5F4F9] h-[340px]">
+                <div className="py-16 px-4">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>02</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      COLLABORATION
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#F5F4F9] h-[340px]">
+                <div className="py-16 px-4">
+                  <div className='flex gap-2 items-center'>
+                    <div className=''>
+                      <div className='font-normal text-lg'>03</div>
+                      <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
+                    </div>
+                    <div className='text-[#C2C2C2] font-normal text-3xl'>
+                      GROWTH
+                    </div>
+                  </div>
+                  <div className='pt-8 text-lg font-normal md:w-[85%]'>
+                    Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc 
+                  </div>
+                </div>
+              </div>
+            </Slider>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div className='pt-2 pl-8 overflow-hidden font-normal text-[50px] text-[#E7E7E7]'>PLAYERS</div>
             <div className='h-[220px] flex justify-center'>
               <img
                 className='absolute z-[100000]'
@@ -165,13 +230,13 @@ function App() {
               />
             </div>
           </div>
-          <div className=' w-full overflow-hidden h-[300px]'>
+          <div className=' w-full overflow-hidden h-[340px]'>
             <Slider {...settings}>
               <div className="bg-[#F5F4F9]">
-                <div className="py-16 px-4 h-[280px]">
+                <div className="py-16 px-4 h-[340px]">
                   <div className='flex gap-2 items-center'>
                     <div className=''>
-                      <div className='font-normal text-lg'>02</div>
+                      <div className='font-normal text-lg'>01</div>
                       <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
                     </div>
                     <div className='text-[#C2C2C2] font-normal text-3xl'>
@@ -179,11 +244,11 @@ function App() {
                     </div>
                   </div>
                   <div className='pt-8 text-lg font-normal md:w-[85%]'>
-                    Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                    Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
                   </div>
                 </div>
               </div>
-              <div className="bg-[#F5F4F9] h-[280px]">
+              <div className="bg-[#F5F4F9] h-[340px]">
                 <div className="py-16 px-4">
                   <div className='flex gap-2 items-center'>
                     <div className=''>
@@ -195,23 +260,23 @@ function App() {
                     </div>
                   </div>
                   <div className='pt-8 text-lg font-normal md:w-[85%]'>
-                    Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.
+                    Work with recruiter to increase your chances of findingtalented athlete.
                   </div>
                 </div>
               </div>
-              <div className="bg-[#F5F4F9] h-[280px]">
+              <div className="bg-[#F5F4F9] h-[340px]">
                 <div className="py-16 px-4">
                   <div className='flex gap-2 items-center'>
                     <div className=''>
-                      <div className='font-normal text-lg'>02</div>
+                      <div className='font-normal text-lg'>03</div>
                       <div className='rounded-lg border-b-4 border-solid border-[#603EBE]'></div>
                     </div>
                     <div className='text-[#C2C2C2] font-normal text-3xl'>
-                      COLLABORATION
+                      GROWTH
                     </div>
                   </div>
                   <div className='pt-8 text-lg font-normal md:w-[85%]'>
-                    Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc 
+                    Save your time, recruit proper athlets for your team.
                   </div>
                 </div>
               </div>
