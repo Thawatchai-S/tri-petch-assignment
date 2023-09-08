@@ -3,7 +3,7 @@
 After clone repository, you must install NPM package by following command
 
 ```
-npm install or yarn
+npm install
 ```
 
 ### Run Project <a name = "runproject"></a>
@@ -11,5 +11,5 @@ npm install or yarn
 After clone repository, you must install NPM package by following command
 
 ```
-npm start or yarn
+npm start
 ```
